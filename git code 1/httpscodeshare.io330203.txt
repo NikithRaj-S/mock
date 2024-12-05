@@ -1,0 +1,77 @@
+https://codeshare.io/330203
+
+  503  git init forest
+  504  cd forest/
+  505  ls -a
+  506  ls
+  507  echo "m1" >> sam.txt
+  508  ls
+  509  cat sam.txt
+  510  git status
+  511  git add .
+  512  git commit -m "m1"
+  513  git log
+  514  git log --oneline
+  515  git log -p
+  516  git remote -v
+  517  git remote add origin https://github.com/sakit333/forest.git
+  518  git remote -v
+  519  git remote -v
+  520  git config --list
+  521  git log --oneline
+  522  git push origin master
+  523  echo "m2" >> sam.txt
+  524  cat sam.txt
+  525  git commit -am "m2"
+  526  git log --oneline
+  527  echo "m3" >> sam.txt
+  528  cat sam.txt
+  529  git commit -am "m3"
+  530  git log --oneline
+  531  cat sam.txt
+  532  git diff master origin/master
+  533  git diff origin/master master
+  534  git log --oneline
+  535  git push origin master
+  536  echo "m4" >> sam.txt
+  537  git commit -am "m4"
+  538  echo "m5 error" >> sam.txt
+  539  git status
+  540  git add .
+  541  cat sam.txt
+  542  git status
+  543  git reset sam.txt
+  544  git status
+  545  cat sam.txt
+  546  git checkout sam.txt
+  547  cat sam.txt
+  548  echo "m5 issues" >> sam.txt
+  549  git status
+  550  git commit -am "m5 issues"
+  551  git log --oneline
+  552  cat sam.txt
+  553  git reset --hard HEAD~1
+  554  git log --oneline
+  555  cat sam.txt
+  556  echo "m5" >> sam.txt
+  557  git commit -am "m5"
+  558  git log --oneline
+  559  echo "m6 problems" >> sam.txt
+  560  cat sam.txt
+  561  git commit -am "m6 problems"
+  562  git log --oneline
+  563  git reset --soft HEAD~1
+  564  git log --oneline
+  565  cat sam.txt
+  566  git log --oneline
+  567  git reset --hard HEAD~2
+  568  git log --oneline
+  569  echo "m4" >> sam.txt
+  570  git commit -am "m4"
+  571  git log --oneline
+  572  echo "m5 error" >> sam.txt
+  573  git commit -am "m5 error"
+  574  git log --oneline
+  575  git revert 95f8ff7
+  576  git log --oneline
+  577  cat sam.txt
